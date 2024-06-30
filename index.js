@@ -2,14 +2,14 @@ const { Telegraf, Markup } = require("telegraf");
 const path = require("path");
 
 // Replace 'YOUR_BOT_TOKEN' with your actual bot token
-const bot = new Telegraf("6866604942:AAG-sv-BX_cvJVfLoCotSaJaqT-LQNXQB6E");
+const bot = new Telegraf("6795133302:AAH-W3dcRilnc72R6goPied0mkPkpQJ8J9Q");
 
 // Helper function to get the image path
 const imagePath = (fileName) => path.join(__dirname, "images", fileName);
 
 bot.start((ctx) => {
   ctx.replyWithPhoto(
-    { source: imagePath("pinkblum.png") },
+    { source: imagePath("loozr.jpg") },
     {
       caption: "Welcome!",
       reply_markup: {
@@ -17,9 +17,9 @@ bot.start((ctx) => {
           [
             {
               text: "Open Loozr",
-              web_app: { url: '"https://learning-mini-bot.vercel.app/' },
+              web_app: { url: "https://learning-mini-bot.vercel.app/" },
             },
-            { text: "Button 2", callback_data: "pinkblum.png" },
+            { text: "Join community", callback_data: "loozr.jpg" },
           ],
         ],
       },
@@ -29,7 +29,7 @@ bot.start((ctx) => {
 
 bot.action("btn1", (ctx) => {
   ctx.replyWithPhoto(
-    { source: imagePath("pinkblum.png") },
+    { source: imagePath("loozr.jpg") },
     {
       caption: "You pressed Button 1!",
       reply_markup: {
@@ -41,7 +41,7 @@ bot.action("btn1", (ctx) => {
 
 bot.action("btn2", (ctx) => {
   ctx.replyWithPhoto(
-    { source: imagePath("pinkblum.png") },
+    { source: imagePath("loozr.jpg") },
     {
       caption: "You pressed Button 2!",
       reply_markup: {
@@ -53,7 +53,7 @@ bot.action("btn2", (ctx) => {
 
 bot.action("back", (ctx) => {
   ctx.replyWithPhoto(
-    { source: imagePath("pinkblum.png") },
+    { source: imagePath("loozr.jpg") },
     {
       caption: "Welcome!",
       reply_markup: {
