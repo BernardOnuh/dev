@@ -10,18 +10,14 @@ const imagePath = (fileName) => path.join(__dirname, "images", fileName);
 bot.start((ctx) => {
   // ctx.reply("Welcome to the bot! Let me show you around.");
   const message = `<b>Hey ${ctx.from.first_name} Welcome to Loozr!👋 </b> \n
-You’re now part of the Loozr Music \n
-Game 🥳🎶, where music pays you! \n\n
+You’re now part of the Loozr Music \n Game 🥳🎶, where music pays you! \n\n
 Discover, crowd-invest & grow with \n your favourite artists 🎤💎\n
-Tokenize creativity, earn rewards,\n
-and join the ultimate music-powered \n
-SocialFi experience! 🚀🔥\n\n
-Start listening, earning, and \n
-celebrating music today! 🚀🎧
+Tokenize creativity, earn rewards,\n and join the ultimate music-powered \n SocialFi experience! 🚀🔥\n\n
+Start listening, earning, and \n celebrating music today! 🚀🎧
 `;
 
   ctx.replyWithPhoto(
-    { source: imagePath("loozr.jpg") },
+    { source: imagePath("loozrr.png") },
     {
       caption: message,
       parse_mode: "HTML",
