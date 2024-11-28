@@ -10,10 +10,15 @@ const imagePath = (fileName) => path.join(__dirname, "images", fileName);
 bot.start((ctx) => {
   // ctx.reply("Welcome to the bot! Let me show you around.");
   const message = `<b>Hey ${ctx.from.first_name} Welcome to Loozr!👋 </b> \n
-The First Social Music Layer of Web 3.0 ☘️ | 📀 \n
-Loozr is your Open Web and DeFi hub for creators and musicians.\n
-Invest in talents, tokenize creative assets, trade as cryptocurrencies, and grow with your fans. \n
-Join the Loozr Airdrop, farm Loozr Points (LP), engage, contribute & #Listen2Earn 🎶🤑🔥`;
+You’re now part of the Loozr Music \n
+Game 🥳🎶, where music pays you! \n\n
+Discover, crowd-invest & grow with \n your favourite artists 🎤💎\n
+Tokenize creativity, earn rewards,\n
+and join the ultimate music-powered \n
+SocialFi experience! 🚀🔥\n\n
+Start listening, earning, and \n
+celebrating music today! 🚀🎧
+`;
 
   ctx.replyWithPhoto(
     { source: imagePath("loozr.jpg") },
@@ -24,12 +29,22 @@ Join the Loozr Airdrop, farm Loozr Points (LP), engage, contribute & #Listen2Ear
         inline_keyboard: [
           [
             {
-              text: "📀 Let's go",
+              text: "📀 Open Game",
               web_app: { url: "https://learning-mini-bot.vercel.app/" },
             },
           ],
-          [{ text: "👍 Join Loozr Community", url: "https://example.com/how-to-play" }],
-          [{ text: "🎓 How to play", url: "https://example.com/how-to-play" }],
+          [
+            {
+              text: "👍 Join Loozr Community",
+              url: "https://t.me/officialloozr",
+            },
+          ],
+          [
+            {
+              text: "🎓 How to play",
+              url: "https://docs.loozr.io/loozr-products/music-game-on-telegram#how-to-get-started ",
+            },
+          ],
         ],
       },
     }
