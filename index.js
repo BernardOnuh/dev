@@ -10,10 +10,10 @@ const imagePath = (fileName) => path.join(__dirname, "images", fileName);
 bot.start((ctx) => {
   // ctx.reply("Welcome to the bot! Let me show you around.");
   const message = `<b>Hey ${ctx.from.first_name} Welcome to Loozr!👋 </b> \n
-You’re now part of the Loozr Music \n Game 🥳🎶, where music pays you! \n\n
-Discover, crowd-invest & grow with \n your favourite artists 🎤💎\n
-Tokenize creativity, earn rewards,\n and join the ultimate music-powered \n SocialFi experience! 🚀🔥\n\n
-Start listening, earning, and \n celebrating music today! 🚀🎧
+You’re now part of the Loozr Music \nGame 🥳🎶, where music pays you! \n
+Discover, crowd-invest & grow with \nyour favourite artists 🎤💎
+Tokenize creativity, earn rewards,\nand join the ultimate music-powered \nSocialFi experience! 🚀🔥\n
+Start listening, earning, and \ncelebrating music today! 🚀🎧
 `;
 
   ctx.replyWithPhoto(
@@ -25,7 +25,7 @@ Start listening, earning, and \n celebrating music today! 🚀🎧
         inline_keyboard: [
           [
             {
-              text: "📀 Open Game",
+              text: "📀 Open Game!",
               web_app: { url: "https://learning-mini-bot.vercel.app/" },
             },
           ],
